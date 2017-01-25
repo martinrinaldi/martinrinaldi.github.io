@@ -1,10 +1,8 @@
 ---
 layout: post
 categories: video
-<<<<<<< HEAD
 date:   2016-06-22 23:53:00 +0200
 title:  ADCI
-home: false
 description:
 videourl: 201017038
 ---
