@@ -1,46 +1,45 @@
-<footer class="site-footer">
+<div class="row">
+<br>
+<hr>
+  <div class="small-4 columns nopadding">
+    <h5>contacts:</h5>
+    <ul class="contact-list">
+      <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      <li>+39 329 9304706</li>
+      <li>
+          {% include icon-skype.html  %} rinaldi.martin
+      </li>
+    </ul>
+  </div> 
 
-  <div class="wrapper">
+    <div class="small-4 columns nopadding">
+      <h5>social:</h5>
+      <ul class="inline-list">
+        {% if site.facebook_username %}
+        <li>
+          {% include icon-facebook.html username=site.facebook_username %}
+        </li>
+        {% endif %}
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <h5>contacts:</h5>
-        <ul class="contact-list">
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+        {% if site.instagram_username %}
+        <li>
+          {% include icon-instagram.html username=site.instagram_username %}
+        </li>
+        {% endif %}
 
-      <div class="footer-col footer-col-2">
-        <h5>social:</h5>
-        <ul class="inline-list">
-          {% if site.facebook_username %}
-          <li>
-            {% include icon-facebook.html username=site.facebook_username %}
-          </li>
-          {% endif %}
+        {% if site.vimeo_username %}
+        <li>
+          {% include icon-vimeo.html username=site.vimeo_username %}
+        </li>
+        {% endif %}
 
-          {% if site.vimeo_username %}
-          <li>
-            {% include icon-vimeo.html username=site.vimeo_username %}
-          </li>
-          {% endif %}
-
-          {% if site.soundcloud_username %}
-          <li>
-            {% include icon-soundcloud.html username=site.soundcloud_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p class="text-justify">{{ site.description }}</p>
-      </div>
+      </ul>
     </div>
 
-  </div>
-
-</footer>
+    <div class="small-4 columns nopadding">
+      <p class="text-justify">{{ site.description }}</p>
+    </div>
+</div>
 
 <script src="{{ "/js/vendor/jquery.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/foundation.min.js" | prepend: site.baseurl }}"></script>

@@ -28,14 +28,14 @@ layout: default
 </div>
 
 
-<p class= "text-center">LATEST WORKS</p>
 
 <div class="row fullWidth">
   {% for post in site.posts %}
  
-    <div class="small-6 large-3 medium-3 columns">
+    <div class="small-12 large-6 medium-6 columns">
+    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       <div class="videoWrapper">
-        <iframe src="https://player.vimeo.com/video/{{ post.videourl }}?title=0&byline=0&portrait=0" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/{{ post.videourl }}?title=0&byline=0&portrait=0" width="100%" height="400" frameborder="0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     </div>
 
