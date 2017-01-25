@@ -3,7 +3,7 @@ layout: post
 categories: video
 date: '2016-06-22 23:53:00 +0200'
 title: test titolo
-home: true
+home: false
 description: null
 videourl: 201015630
 sound: null
