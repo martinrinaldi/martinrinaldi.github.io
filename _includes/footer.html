@@ -1,0 +1,63 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <h5>contacts:</h5>
+        <ul class="contact-list">
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <h5>social:</h5>
+        <ul class="inline-list">
+          {% if site.facebook_username %}
+          <li>
+            {% include icon-facebook.html username=site.facebook_username %}
+          </li>
+          {% endif %}
+
+          {% if site.vimeo_username %}
+          <li>
+            {% include icon-vimeo.html username=site.vimeo_username %}
+          </li>
+          {% endif %}
+
+          {% if site.soundcloud_username %}
+          <li>
+            {% include icon-soundcloud.html username=site.soundcloud_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p class="text-justify">{{ site.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+<script src="{{ "/js/vendor/jquery.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/foundation.min.js" | prepend: site.baseurl }}"></script>
+
+<script>
+      $(document).foundation();
+</script>
+
+<script src='http://cdn.jsdelivr.net/vivus/0.1.2/vivus.min.js'></script>
+<script>
+        var hi = new Vivus('hi-there', {type: 'scenario-sync', duration: 20, start: 'autostart', forceRender: false, dashGap: 20}, function () {
+          if (window.console) {
+            console.log('Animation finished. [log triggered from callback]');
+          }
+        }),
+        obt1 = new Vivus('obturateur1', {type: 'delayed', duration: 150}),
+        obt2 = new Vivus('obturateur2', {type: 'async', duration: 150}),
+        obt3 = new Vivus('obturateur3', {type: 'oneByOne', duration: 150}),
+        pola = new Vivus('polaroid', {type: 'scenario-sync', duration: 20, forceRender: false});
+</script>
