@@ -4,11 +4,16 @@ body{
 
 	
 	h1, h2, h3, h4, h5, h6{
-		font: 200% 'Raleway', 'Helvetica Neue', Helvetica , Arial, sans-serif;
+		font: 200%/1.6'Raleway', 'Helvetica Neue', Helvetica , Arial, sans-serif;
 	font-weight:700;
-
+  
 	}
+  
+  .titlehome{
+  font-weight:300;
+  font-size: 22px;
 
+  }
 
 	a{
 	color: black;
@@ -346,19 +351,20 @@ Primary style
   width: 90%;
   max-width: 768px;
   text-align: center;
+  padding:0px;
 }
 
 .cd-intro {
-  margin: 4em auto;
+  margin: 2em auto;
 }
 @media only screen and (min-width: 768px) {
   .cd-intro {
-    margin: 5em auto;
+    margin: 3em auto;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-intro {
-    margin: 6em auto;
+    margin: 1em auto;
   }
 }
 
