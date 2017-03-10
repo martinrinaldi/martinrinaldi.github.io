@@ -2,7 +2,7 @@
 layout: post
 categories: video
 date: '2017-03-09 21:53:00 +0200'
-title: ADCI Awards 2015.md
+title: ADCI Awards 2015
 description: null
 videourl: 201015630
 published: true
