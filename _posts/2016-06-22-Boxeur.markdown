@@ -7,5 +7,3 @@ description: null
 videourl: 201017038
 published: true
 ---
-
-questa è una descrizione
