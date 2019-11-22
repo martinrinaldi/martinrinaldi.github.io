@@ -34,12 +34,10 @@ layout: default
 <ul class="small-block-grid-1 medium-block-grid-1 large-block-grid-2">  
 {% for post in site.posts %}
     <li>
-    
     <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="titlehome">{{ post.title }}</h3></a>
       <div class="videoWrapper">
         <iframe src="https://player.vimeo.com/video/{{ post.videourl }}?title=0&byline=0&portrait=0" width="100%" height="400" frameborder="0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      <hr>
     </li>
   {% endfor %}
 </ul>  
