@@ -8,9 +8,7 @@
     <ul class="contact-list">
       <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
       <li>+39 329 9304706</li>
-      <li>
-          {% include icon-skype.html  %} rinaldi.martin
-      </li>
+      
     </ul>
   </div> 
 
@@ -32,6 +30,9 @@
         {% if site.vimeo_username %}
         <li>
           {% include icon-vimeo.html username=site.vimeo_username %}
+        </li>
+        <li>
+          {% include icon-skype.html  %} rinaldi.martin
         </li>
         {% endif %}
 
