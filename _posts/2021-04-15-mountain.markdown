@@ -1,0 +1,9 @@
+---
+layout: post
+categories: video
+date: '2021-04-15 23:53:00 +0200'
+title: A story of mountain and friendship
+description: null
+videourl: 320310130
+published: true
+---
